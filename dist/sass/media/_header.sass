@@ -1,0 +1,47 @@
+@media (max-width: 1000px)
+
+	.menu-burger
+		display: block
+
+	.menu
+		flex-direction: column
+		margin-right: 0
+		padding: 30px 40px
+		background-color: #99c50a
+		border-radius: 50px 50px 50px 50px
+		position: absolute
+		top: 60px
+		right: 0
+		z-index: 0
+		opacity: 1
+		transform: translate(100%) scale(0,0)
+		transition: all .3s
+	
+	.menu-burger_active + .menu
+		transform: translateX(0) scale(1,1)
+		opacity: 1
+		z-index: 9
+		border-radius: 50px 0 0 50px		
+
+	.logo
+		margin-right: 0
+
+	.menu__link
+		padding: 44px 40px
+		color: white
+
+	.btn-custom__header
+		position: absolute
+		top: 20px
+		right: 150px
+
+@media (max-width: 768px)
+	
+	.logo
+		font-size: 25px
+
+	.menu
+		top: 52px
+		
+	.btn-custom__header
+		display: none

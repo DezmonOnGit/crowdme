@@ -1,0 +1,31 @@
+@media (max-width: 1000px)
+	.tab-navigation__item
+		font-size: 28px
+
+	.tab-navigation:after
+		display: none
+
+@media (max-width: 768px)
+	.tab-navigation
+		flex-wrap: wrap
+		justify-content: space-around
+
+	.tab-navigation__item
+		font-size: 25px
+
+	.tab-navigation:after
+		display: none
+
+	.tab-content__item
+		padding-left: 180px
+
+	.tab-content__item:before
+		left: 20px
+
+
+@media (max-width: 320px)
+	.tab-content__item
+		padding-left: 0
+
+	.tab-content__item:before
+		display: none

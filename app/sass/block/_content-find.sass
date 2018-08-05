@@ -1,0 +1,124 @@
+.content-find
+	display: flex
+	margin-bottom: 80px
+	overflow: hidden
+
+.content-find__item
+	display: flex
+	width: 50%
+
+.content-find-blue
+	justify-content: flex-end
+	padding: 50px 70px
+	background-color: #e2f8ff
+	transform: translateX(-500px)
+	transition: all 2s
+
+.content-find-blue_visible
+	transform: translateX(0)
+
+.content-find-blue__wrapper
+	display: flex
+	flex-direction: column
+	width: 260px
+	padding-left: 180px
+	position: relative
+
+.content-find-blue__wrapper:before
+	content: ""
+	width: 133px
+	height: 112px
+	background: url(../img/content-find-img-1.1.png) no-repeat
+	position: absolute
+	top: calc(50% - 66.5px)
+	left: 0
+
+.content-find-blue__wrapper:after
+	content: ""
+	width: 77px
+	height: 74px
+	background: url(../img/content-find-img-1.2.png)
+	position: absolute
+	bottom: 105px
+	left: 14px
+	opacity: 0
+	transition: all .3s
+
+.content-find-blue:hover > .content-find-blue__wrapper:after
+	opacity: 1
+
+.content-find__title
+	font-family: "Montserrat", Arial, sans-serif
+	font-size: 23px
+	color: #515151
+	margin-bottom: 40px
+
+.content-find-blue__description
+	font-family: "OpenSans", Arial, sans-serif
+	font-size: 17px
+	color: #515151
+	line-height: 28px
+	margin-bottom: 30px
+
+.btn-custom__content-find-blue
+	padding: 20px 25px
+	background-color: #26a6d1
+	text-align: center
+	border-radius: 8px
+	font-size: 15px
+
+.btn-custom__content-find-blue:hover
+	background-color: #2294ba
+
+.content-find-yellow
+	justify-content: flex-start
+	padding: 50px 70px
+	background-color: #f5f9eb
+	transform: translateX(500px)
+	transition: all 2s
+
+.content-find-yellow_visible
+	transform: translateX(0)
+
+.content-find-yellow__wrapper
+	display: flex
+	flex-direction: column
+	width: 260px
+	padding-left: 180px
+	position: relative
+
+.content-find-yellow__wrapper:before
+	content: ""
+	width: 133px
+	height: 112px
+	background: url(../img/content-find-img-2.1.png) no-repeat
+	position: absolute
+	top: calc(50% - 66.5px)
+	left: 0
+	z-index: 99
+
+.content-find-yellow__wrapper:after
+	content: ""
+	width: 80px
+	height: 12px
+	background: url(../img/content-find-img-2.2.png) no-repeat
+	position: absolute
+	top: 67px
+	left: 10px
+	z-index: 999
+	transition: all .3s
+
+.content-find-yellow:hover > .content-find-yellow__wrapper:after
+	height: 28px
+	transform: translateY(-14px)
+
+.btn-custom__content-find-yellow
+	padding: 20px 25px
+	background-color: #add136
+	text-align: center
+	border-radius: 8px
+	font-size: 15px
+
+.btn-custom__content-find-yellow:hover
+	background-color: #9cbd31
+

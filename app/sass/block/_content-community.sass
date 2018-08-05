@@ -1,0 +1,109 @@
+.content-community
+	background: url(../img/content-community-bg.png) no-repeat
+	background-position: 30% 100%
+	background-size: cover
+	padding-top: 40px
+	padding-bottom: 99px
+	position: relative
+
+.content-community__animation
+	width: 100%
+	height: 100%
+	background-color: white
+	position: absolute
+	top: 0
+	left: 0
+	transition: all 2s
+
+.content-community__animation_visible
+	height: 0
+
+.community-header
+	position: relative
+	transform: scale(0,0)
+	transition: all 2s
+
+.community-header_visible
+	transform: scale(1,1)	
+
+.community-header__title
+	font-family: "OpenSans-Semibold", Arial, sans-serif
+	font-size: 39px
+	color: #9ec02d
+	text-align: center
+	margin-bottom: 50px
+
+
+.community-header__description
+	font-family: "OpenSans", Arial, sans-serif
+	font-size: 19px
+	color: #949494
+	line-height: 30px
+	text-align: center
+	margin-bottom: 100px
+
+.community-comments
+	display: flex
+	justify-content: center
+	transform: scale(0,0)
+	transition: all 2s	
+
+.community-comments_visible
+	transform: scale(1,1)
+
+.community-comments__item
+	margin-right: 80px
+
+.community-comments__item:nth-child(2n+2)
+	margin-right: 0
+
+.usr-comment
+	width: 400px
+
+.usr-comment__text
+	width: 400px
+	padding: 25px 35px
+	box-sizing: border-box
+	border-radius: 10px
+	background-color: white
+	margin-bottom: 35px
+	position: relative
+	z-index: 9
+
+.usr-comment__text:after
+	content: ""
+	border: 20px solid transparent
+	border-left: 20px solid white 
+	border-top: 20px solid white
+	position: absolute
+	bottom: -20px
+	left: 80px
+
+.usr-comment__title
+	font-family: "OpenSans-Semibold", Arial, sans-serif
+	font-size: 21px
+	text-align: center
+	color: #9ec02d
+	margin-bottom: 20px
+
+.usr-comment__description
+	font-family: "OpenSans", Arial, sans-serif
+	font-size: 13px
+	text-align: center
+	line-height: 25px
+	color: #848484
+
+.usr-comment__usr-info
+	display: flex
+	align-items: center
+	padding-left: 50px
+
+.usr-comment__avatar
+	width: 60px
+	height: 60px
+	margin-right: 20px
+
+.usr-comment__name
+	font-family: "Montserrat", Arial, sans-serif
+	font-size: 15px
+	color: #494949
